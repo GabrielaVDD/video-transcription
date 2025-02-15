@@ -17,7 +17,7 @@ if "transcription_text" not in st.session_state:
     st.session_state.transcription_text = ""
 
 # File uploader
-uploaded_file = st.file_uploader("Upload a video file here:", type=["mp4", "mov", "avi", "mkv"], key="unique_file_uploader")
+uploaded_file = st.file_uploader("Upload a video file here:", type=["mp4", "mov", "avi", "mkv"])
 
 # Clear transcription when a new file is uploaded
 if uploaded_file:
